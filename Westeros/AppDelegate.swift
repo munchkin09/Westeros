@@ -17,16 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
-        // Crear un Window
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.backgroundColor = UIColor.cyan
         
-        // Crear un RootViewController
-        let rootVC = UIViewController()
+        let houses = Repository.local.houses
         
-        window?.rootViewController = rootVC
+        //Creamos el combinador
+        let tabVC = UITabBarController()
+        tabVC.viewControllers = houses.map { HouseViewController(model: $0).wrappedInNavigation() }
+               
+        window?.rootViewController = tabVC
         
         return true
     }
