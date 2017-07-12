@@ -10,6 +10,7 @@
 		280205161F155DA90046FEC7 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205151F155DA90046FEC7 /* UIKitExtensions.swift */; };
 		280205181F1560720046FEC7 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205171F1560720046FEC7 /* RepositoryTests.swift */; };
 		2802051A1F15621A0046FEC7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205191F15621A0046FEC7 /* Repository.swift */; };
+		2857CD4C1F163BD0006D99CE /* Casa_Targaryen_estandarte.png in Resources */ = {isa = PBXBuildFile; fileRef = 2857CD4B1F163BD0006D99CE /* Casa_Targaryen_estandarte.png */; };
 		28891E281F0C47E200AF29BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28891E271F0C47E200AF29BF /* AppDelegate.swift */; };
 		28891E2F1F0C47E200AF29BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28891E2E1F0C47E200AF29BF /* Assets.xcassets */; };
 		28891E321F0C47E200AF29BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28891E301F0C47E200AF29BF /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 		280205171F1560720046FEC7 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		280205191F15621A0046FEC7 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Westeros/Repository.swift; sourceTree = "<group>"; };
 		2802051B1F1572190046FEC7 /* FuncionesDeAltoNivel.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FuncionesDeAltoNivel.playground; sourceTree = "<group>"; };
+		2857CD4B1F163BD0006D99CE /* Casa_Targaryen_estandarte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Casa_Targaryen_estandarte.png; sourceTree = "<group>"; };
 		28891E241F0C47E200AF29BF /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28891E271F0C47E200AF29BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28891E2E1F0C47E200AF29BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		28B7846C1F0EC87700255F77 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2857CD4B1F163BD0006D99CE /* Casa_Targaryen_estandarte.png */,
 				28B784681F0EC86D00255F77 /* lannister.jpg */,
 				28B784691F0EC86D00255F77 /* codeIsComing.png */,
 			);
@@ -243,6 +246,7 @@
 			files = (
 				28B7846A1F0EC86D00255F77 /* lannister.jpg in Resources */,
 				28891E321F0C47E200AF29BF /* LaunchScreen.storyboard in Resources */,
+				2857CD4C1F163BD0006D99CE /* Casa_Targaryen_estandarte.png in Resources */,
 				289772E21F141290009B62F7 /* HouseViewController.xib in Resources */,
 				28891E2F1F0C47E200AF29BF /* Assets.xcassets in Resources */,
 				28B7846B1F0EC86D00255F77 /* codeIsComing.png in Resources */,
