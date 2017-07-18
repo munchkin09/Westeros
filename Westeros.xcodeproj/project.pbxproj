@@ -10,6 +10,12 @@
 		280205161F155DA90046FEC7 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205151F155DA90046FEC7 /* UIKitExtensions.swift */; };
 		280205181F1560720046FEC7 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205171F1560720046FEC7 /* RepositoryTests.swift */; };
 		2802051A1F15621A0046FEC7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205191F15621A0046FEC7 /* Repository.swift */; };
+		284430B71F1E28C600F61E40 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284430B51F1E28C600F61E40 /* PersonsTableViewController.swift */; };
+		284430B81F1E28C600F61E40 /* PersonsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284430B61F1E28C600F61E40 /* PersonsTableViewController.xib */; };
+		2855D25B1F1D4A3600D8B91D /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855D2591F1D4A3600D8B91D /* WikiViewController.swift */; };
+		2855D25C1F1D4A3600D8B91D /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2855D25A1F1D4A3600D8B91D /* WikiViewController.xib */; };
+		2855D25F1F1D663600D8B91D /* HousesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855D25D1F1D663600D8B91D /* HousesTableViewController.swift */; };
+		2855D2601F1D663600D8B91D /* HousesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2855D25E1F1D663600D8B91D /* HousesTableViewController.xib */; };
 		2857CD4C1F163BD0006D99CE /* Casa_Targaryen_estandarte.png in Resources */ = {isa = PBXBuildFile; fileRef = 2857CD4B1F163BD0006D99CE /* Casa_Targaryen_estandarte.png */; };
 		28891E281F0C47E200AF29BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28891E271F0C47E200AF29BF /* AppDelegate.swift */; };
 		28891E2F1F0C47E200AF29BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28891E2E1F0C47E200AF29BF /* Assets.xcassets */; };
@@ -39,6 +45,12 @@
 		280205171F1560720046FEC7 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		280205191F15621A0046FEC7 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Westeros/Repository.swift; sourceTree = "<group>"; };
 		2802051B1F1572190046FEC7 /* FuncionesDeAltoNivel.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FuncionesDeAltoNivel.playground; sourceTree = "<group>"; };
+		284430B51F1E28C600F61E40 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
+		284430B61F1E28C600F61E40 /* PersonsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonsTableViewController.xib; sourceTree = "<group>"; };
+		2855D2591F1D4A3600D8B91D /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		2855D25A1F1D4A3600D8B91D /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
+		2855D25D1F1D663600D8B91D /* HousesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesTableViewController.swift; sourceTree = "<group>"; };
+		2855D25E1F1D663600D8B91D /* HousesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HousesTableViewController.xib; sourceTree = "<group>"; };
 		2857CD4B1F163BD0006D99CE /* Casa_Targaryen_estandarte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Casa_Targaryen_estandarte.png; sourceTree = "<group>"; };
 		28891E241F0C47E200AF29BF /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28891E271F0C47E200AF29BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +145,12 @@
 			children = (
 				289772DF1F141290009B62F7 /* HouseViewController.swift */,
 				289772E01F141290009B62F7 /* HouseViewController.xib */,
+				2855D2591F1D4A3600D8B91D /* WikiViewController.swift */,
+				2855D25A1F1D4A3600D8B91D /* WikiViewController.xib */,
+				2855D25D1F1D663600D8B91D /* HousesTableViewController.swift */,
+				2855D25E1F1D663600D8B91D /* HousesTableViewController.xib */,
+				284430B51F1E28C600F61E40 /* PersonsTableViewController.swift */,
+				284430B61F1E28C600F61E40 /* PersonsTableViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -245,8 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B7846A1F0EC86D00255F77 /* lannister.jpg in Resources */,
+				2855D25C1F1D4A3600D8B91D /* WikiViewController.xib in Resources */,
+				284430B81F1E28C600F61E40 /* PersonsTableViewController.xib in Resources */,
 				28891E321F0C47E200AF29BF /* LaunchScreen.storyboard in Resources */,
 				2857CD4C1F163BD0006D99CE /* Casa_Targaryen_estandarte.png in Resources */,
+				2855D2601F1D663600D8B91D /* HousesTableViewController.xib in Resources */,
 				289772E21F141290009B62F7 /* HouseViewController.xib in Resources */,
 				28891E2F1F0C47E200AF29BF /* Assets.xcassets in Resources */,
 				28B7846B1F0EC86D00255F77 /* codeIsComing.png in Resources */,
@@ -267,12 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2855D25F1F1D663600D8B91D /* HousesTableViewController.swift in Sources */,
 				28B784711F0ECD8100255F77 /* Person.swift in Sources */,
 				28B784661F0EC23700255F77 /* House.swift in Sources */,
 				28891E281F0C47E200AF29BF /* AppDelegate.swift in Sources */,
 				289772E11F141290009B62F7 /* HouseViewController.swift in Sources */,
 				280205161F155DA90046FEC7 /* UIKitExtensions.swift in Sources */,
 				2802051A1F15621A0046FEC7 /* Repository.swift in Sources */,
+				2855D25B1F1D4A3600D8B91D /* WikiViewController.swift in Sources */,
+				284430B71F1E28C600F61E40 /* PersonsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,12 +26,14 @@ class HouseTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        starkImage = #imageLiteral(resourceName: "codeIsComing.png")
-        lannisterImage = #imageLiteral(resourceName: "lannister.jpg")
-        starkSigil = Sigil(description: "Direwolf",image: starkImage)
-        lannisterSigil = Sigil(description: "Rampant Lion", image: lannisterImage)
-        stark = House(name: "Stark", sigil: starkSigil, words: "eoeoeo")
-        lannister = House(name: "Lannister", sigil: lannisterSigil, words: "Hear me roar!")
+        stark = Repository.local.house(named: "Stark")
+        lannister = Repository.local.house(named: "Lannister")
+        
+        starkImage = stark.sigil.image
+        lannisterImage = lannister.sigil.image
+        starkSigil = stark.sigil
+        lannisterSigil = stark.sigil
+        
         
         robb = Person(name: "Robb", alias: "The young wolf", house: stark)
         arya = Person(name: "Arya", house: stark)
@@ -50,18 +52,16 @@ class HouseTests: XCTestCase {
     }
     
     func testSigilExistence() {
-        let starkSigil = Sigil(description: "Direwolf",image: #imageLiteral(resourceName: "codeIsComing.png"))
         XCTAssertNotNil(starkSigil)
         
-        let lannisterSigil = Sigil(description: "Rampant Lion", image: #imageLiteral(resourceName: "lannister.jpg"))
         XCTAssertNotNil(lannisterSigil)
     }
     
     func testAddPersons() {
-        XCTAssertEqual(stark.count, 0)
+        XCTAssertEqual(stark.count, 2)
         stark.add(person: robb)
         
-        XCTAssertEqual(stark.count, 1)
+        XCTAssertEqual(stark.count, 2)
         stark.add(person: arya)
         
         XCTAssertEqual(stark.count, 2)
@@ -76,7 +76,9 @@ class HouseTests: XCTestCase {
         XCTAssertEqual(stark, stark)
         
         //Igualdad
-        let stark2 = House(name: "Stark", sigil: starkSigil, words: "eoeoeo")
+        let stark2 = House(name: "Stark", sigil: starkSigil, words: "Winter is Coming", url: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
+        stark2.add(person: robb)
+        stark2.add(person: arya)
         XCTAssertEqual(stark, stark2)
         
         //Desigualdad

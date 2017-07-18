@@ -23,10 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let houses = Repository.local.houses
         
         //Creamos el combinador
-        let tabVC = UITabBarController()
-        tabVC.viewControllers = houses.map { HouseViewController(model: $0).wrappedInNavigation() }
-               
-        window?.rootViewController = tabVC
+        let tableVC = HousesTableViewController(model: houses).wrappedInNavigation()
+        
+        window?.rootViewController = tableVC
         
         return true
     }

@@ -17,13 +17,16 @@ final class House {
     let name  : String
     let sigil : Sigil
     let words : Words
+    let wikiURL : URL
     private var _members : Members
+    
     
     init(name  : String,
          sigil : Sigil,
-         words : Words) {
+         words : Words,
+         url : URL) {
         
-        (self.name,self.sigil,self.words) = (name, sigil, words)
+        (self.name,self.sigil,self.words,self.wikiURL) = (name, sigil, words,url)
         _members = Members()
         
     }
@@ -57,6 +60,10 @@ extension House {
             return
         }
         _members.insert(person)
+    }
+    
+    var members : Members {
+        return _members
     }
 }
 

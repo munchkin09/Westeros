@@ -45,7 +45,33 @@ class HouseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupUI()
         syncViewWithModel()
     }
     
+    
+    func setupUI() {
+        
+        let wiki = UIBarButtonItem(title: "Wiki",
+                                   style: .plain,
+                                   target: self,
+                                   action: #selector(displayWiki))
+        
+        let characters = UIBarButtonItem(title: "Persons", style: .plain, target: self, action: #selector(displayPersons))
+        
+        navigationItem.rightBarButtonItems = [wiki,characters]
+    }
+    
+    @objc func displayWiki() {
+        //Creamos un WikiVC
+        let wikiVC = WikiViewController(model: model)
+        
+        navigationController?.pushViewController(wikiVC, animated: true)
+    }
+    
+    @objc func displayPersons() {
+        let personsVC = PersonsTableViewController(model: Array(model.members))
+        
+        navigationController?.pushViewController(personsVC, animated: true)
+    }
 }

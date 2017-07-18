@@ -27,8 +27,6 @@ final class Person {
         }
     }
     
-    
-    
     init(name: String, alias: String?, house: House) {
         (self.name, self._alias, self.house) = (name,alias,house)
     }

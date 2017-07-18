@@ -11,9 +11,13 @@ import XCTest
 
 class RepositoryTests: XCTestCase {
     
+    var houses : [House]!
+    var stark : House!
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        houses = Repository.local.houses
+        stark = Repository.local.house(named: "Stark")
     }
     
     override func tearDown() {
@@ -28,17 +32,35 @@ class RepositoryTests: XCTestCase {
     func testLocalRepositoryHouseCreation() {
         let houses = Repository.local.houses
         XCTAssertNotNil(houses)
-        XCTAssertEqual(houses.count, 2)
+        XCTAssertEqual(houses.count, 3)
     }
     
     func testLocaRepositorySearchByName() {
-        var house = Repository.local.getHouseByName(name: "Stark")
+        var house = Repository.local.house(named: "Stark")
         XCTAssertNotNil(house)
-        house = Repository.local.getHouseByName(name: "Jander")
+        house = Repository.local.house(named: "Jander")
         XCTAssertNil(house)
-        house = Repository.local.getHouseByName(name: "Lannister")
+        house = Repository.local.house(named: "Lannister")
         XCTAssertNotNil(house)
+        house = Repository.local.house(named: "LaNnistEr")
+        XCTAssertEqual(house?.name, "Lannister")
         
+    }
+    
+    func testLocalRepositorySortedHouses() {
+         XCTAssertEqual(houses, houses.sorted())
+    }
+    
+    func testLocalFilteredBy() {
+        /*let results : [House] = Repository.local.houses(filteredBy: (stark) {
+            
+        })*/
+        
+        var filtered = Repository.local.houses.filter{ $0.count == 4}
+        XCTAssertEqual(filtered.count, 1)
+        
+        filtered = Repository.local.houses(filteredBy: {$0.count == 4})
+        XCTAssertEqual(filtered.count, 1)
     }
     
 }

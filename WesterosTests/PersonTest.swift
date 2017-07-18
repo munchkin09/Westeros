@@ -28,8 +28,8 @@ class PersonTest: XCTestCase {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
-        stark = Repository.local.getHouseByName(name: "Stark")
-        lannister = Repository.local.getHouseByName(name: "Lannister")
+        stark = Repository.local.house(named: "Stark")
+        lannister = Repository.local.house(named: "Lannister")
         
         starkImage = stark.sigil.image
         lannisterImage = lannister.sigil.image
