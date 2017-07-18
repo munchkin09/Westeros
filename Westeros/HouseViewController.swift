@@ -70,7 +70,7 @@ class HouseViewController: UIViewController {
     }
     
     @objc func displayPersons() {
-        let personsVC = PersonsTableViewController(model: Array(model.members))
+        let personsVC = PersonsTableViewController(model: Array(model.members).sorted())
         
         navigationController?.pushViewController(personsVC, animated: true)
     }

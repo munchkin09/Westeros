@@ -28,6 +28,8 @@
 		28B7846B1F0EC86D00255F77 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B784691F0EC86D00255F77 /* codeIsComing.png */; };
 		28B7846F1F0ECAAA00255F77 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7846E1F0ECAAA00255F77 /* PersonTest.swift */; };
 		28B784711F0ECD8100255F77 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B784701F0ECD8100255F77 /* Person.swift */; };
+		28D4EB401F1E99DA0089F52E /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB3F1F1E99DA0089F52E /* ArrayDataSource.swift */; };
+		28D4EB421F1E9EE40089F52E /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB411F1E9EE40089F52E /* ArrayDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		28B784691F0EC86D00255F77 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
 		28B7846E1F0ECAAA00255F77 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		28B784701F0ECD8100255F77 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		28D4EB3E1F1E90B70089F52E /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generics.playground; sourceTree = "<group>"; };
+		28D4EB3F1F1E99DA0089F52E /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		28D4EB411F1E9EE40089F52E /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +130,7 @@
 				28891E301F0C47E200AF29BF /* LaunchScreen.storyboard */,
 				28891E331F0C47E200AF29BF /* Info.plist */,
 				2802051B1F1572190046FEC7 /* FuncionesDeAltoNivel.playground */,
+				28D4EB3E1F1E90B70089F52E /* Generics.playground */,
 			);
 			path = Westeros;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 				28B784631F0EC0F100255F77 /* HouseTests.swift */,
 				28B7846E1F0ECAAA00255F77 /* PersonTest.swift */,
 				280205171F1560720046FEC7 /* RepositoryTests.swift */,
+				28D4EB411F1E9EE40089F52E /* ArrayDataSourceTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 				2855D25E1F1D663600D8B91D /* HousesTableViewController.xib */,
 				284430B51F1E28C600F61E40 /* PersonsTableViewController.swift */,
 				284430B61F1E28C600F61E40 /* PersonsTableViewController.xib */,
+				28D4EB3F1F1E99DA0089F52E /* ArrayDataSource.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -288,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D4EB401F1E99DA0089F52E /* ArrayDataSource.swift in Sources */,
 				2855D25F1F1D663600D8B91D /* HousesTableViewController.swift in Sources */,
 				28B784711F0ECD8100255F77 /* Person.swift in Sources */,
 				28B784661F0EC23700255F77 /* House.swift in Sources */,
@@ -306,6 +315,7 @@
 			files = (
 				28B784641F0EC0F100255F77 /* HouseTests.swift in Sources */,
 				28B7846F1F0ECAAA00255F77 /* PersonTest.swift in Sources */,
+				28D4EB421F1E9EE40089F52E /* ArrayDataSourceTests.swift in Sources */,
 				280205181F1560720046FEC7 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
