@@ -24,7 +24,7 @@ final class ArrayTableViewDelegate<Element>: NSObject, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = model[indexPath.row]
-        let houseVC = HouseViewController(model: house)
+        
         
     }
 }

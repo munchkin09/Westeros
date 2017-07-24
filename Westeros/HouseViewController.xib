@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,26 +23,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceX-LK-cDn">
-                    <rect key="frame" x="16" y="20" width="343" height="434"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ceX-LK-cDn">
+                    <rect key="frame" x="16" y="8" width="343" height="434"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ceX-LK-cDn" secondAttribute="height" multiplier="49:62" id="ifY-qf-tZP"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lL-kE-fTp">
-                    <rect key="frame" x="16" y="462" width="343" height="52"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                    <color key="textColor" red="0.3246842616580311" green="0.3246842616580311" blue="0.3246842616580311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uET-xA-ard">
-                    <rect key="frame" x="16" y="595" width="343" height="52"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
-                    <color key="textColor" red="0.32468426169999998" green="0.32468426169999998" blue="0.32468426169999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="oEH-cd-21f">
+                    <rect key="frame" x="4" y="450" width="367" height="66.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lL-kE-fTp">
+                            <rect key="frame" x="0.0" y="0.0" width="367" height="35.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                            <color key="textColor" red="0.3246842616580311" green="0.3246842616580311" blue="0.3246842616580311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uET-xA-ard">
+                            <rect key="frame" x="0.0" y="41.5" width="367" height="25"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                            <color key="textColor" red="0.32468426169999998" green="0.32468426169999998" blue="0.32468426169999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ceX-LK-cDn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="3A1-LQ-Dc4"/>
+                <constraint firstItem="ceX-LK-cDn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7th-fD-c4c"/>
+                <constraint firstItem="oEH-cd-21f" firstAttribute="top" secondItem="ceX-LK-cDn" secondAttribute="bottom" constant="8" id="8yy-BX-rRa"/>
+                <constraint firstItem="oEH-cd-21f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="DVg-ZF-M8X"/>
+                <constraint firstAttribute="trailing" secondItem="oEH-cd-21f" secondAttribute="trailing" constant="4" id="I12-3q-Cot"/>
+                <constraint firstAttribute="trailing" secondItem="ceX-LK-cDn" secondAttribute="trailing" constant="16" id="Rpm-NT-UJ8"/>
+                <constraint firstItem="oEH-cd-21f" firstAttribute="top" secondItem="ceX-LK-cDn" secondAttribute="bottom" constant="8" id="zzp-9y-isH"/>
+            </constraints>
             <point key="canvasLocation" x="-185" y="-90"/>
         </view>
     </objects>

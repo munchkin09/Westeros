@@ -29,6 +29,10 @@ final class ArrayDataSource<Element> : NSObject, UITableViewDataSource {
         super.init()
     }
     
+    
+    
+    // Estas 3 funciones son las que debemos implementar para ser el dataSource de cualquier UITableView
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
