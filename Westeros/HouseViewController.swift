@@ -57,7 +57,10 @@ class HouseViewController: UIViewController {
                                    target: self,
                                    action: #selector(displayWiki))
         
-        let characters = UIBarButtonItem(title: "Persons", style: .plain, target: self, action: #selector(displayPersons))
+        let characters = UIBarButtonItem(title: "Persons",
+                                         style: .plain,
+                                         target: self,
+                                         action: #selector(displayPersons))
         
         navigationItem.rightBarButtonItems = [wiki,characters]
     }

@@ -30,6 +30,10 @@
 		28B784711F0ECD8100255F77 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B784701F0ECD8100255F77 /* Person.swift */; };
 		28D4EB401F1E99DA0089F52E /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB3F1F1E99DA0089F52E /* ArrayDataSource.swift */; };
 		28D4EB421F1E9EE40089F52E /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB411F1E9EE40089F52E /* ArrayDataSourceTests.swift */; };
+		28D4EB441F1EA9940089F52E /* ArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB431F1EA9940089F52E /* ArrayTableViewController.swift */; };
+		28D4EB471F1EAB740089F52E /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB461F1EAB740089F52E /* DataSources.swift */; };
+		28D4EB491F1EB0240089F52E /* ArrayTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB481F1EB0240089F52E /* ArrayTableViewDelegate.swift */; };
+		28D4EB4B1F1EB11F0089F52E /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB4A1F1EB11F0089F52E /* Delegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		28D4EB3E1F1E90B70089F52E /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generics.playground; sourceTree = "<group>"; };
 		28D4EB3F1F1E99DA0089F52E /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
 		28D4EB411F1E9EE40089F52E /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
+		28D4EB431F1EA9940089F52E /* ArrayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewController.swift; sourceTree = "<group>"; };
+		28D4EB461F1EAB740089F52E /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
+		28D4EB481F1EB0240089F52E /* ArrayTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewDelegate.swift; sourceTree = "<group>"; };
+		28D4EB4A1F1EB11F0089F52E /* Delegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,7 @@
 		289772DE1F1411AD009B62F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				28D4EB451F1EAB510089F52E /* Generics */,
 				289772DF1F141290009B62F7 /* HouseViewController.swift */,
 				289772E01F141290009B62F7 /* HouseViewController.xib */,
 				2855D2591F1D4A3600D8B91D /* WikiViewController.swift */,
@@ -158,7 +167,6 @@
 				2855D25E1F1D663600D8B91D /* HousesTableViewController.xib */,
 				284430B51F1E28C600F61E40 /* PersonsTableViewController.swift */,
 				284430B61F1E28C600F61E40 /* PersonsTableViewController.xib */,
-				28D4EB3F1F1E99DA0089F52E /* ArrayDataSource.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +190,34 @@
 				28B784691F0EC86D00255F77 /* codeIsComing.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		28D4EB451F1EAB510089F52E /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				28D4EB4D1F1EB1C70089F52E /* Delegates */,
+				28D4EB4C1F1EB1BF0089F52E /* DataSources */,
+				28D4EB431F1EA9940089F52E /* ArrayTableViewController.swift */,
+				28D4EB3F1F1E99DA0089F52E /* ArrayDataSource.swift */,
+				28D4EB481F1EB0240089F52E /* ArrayTableViewDelegate.swift */,
+			);
+			name = Generics;
+			sourceTree = "<group>";
+		};
+		28D4EB4C1F1EB1BF0089F52E /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				28D4EB461F1EAB740089F52E /* DataSources.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		28D4EB4D1F1EB1C70089F52E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28D4EB4A1F1EB11F0089F52E /* Delegates.swift */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D4EB441F1EA9940089F52E /* ArrayTableViewController.swift in Sources */,
 				28D4EB401F1E99DA0089F52E /* ArrayDataSource.swift in Sources */,
+				28D4EB4B1F1EB11F0089F52E /* Delegates.swift in Sources */,
+				28D4EB491F1EB0240089F52E /* ArrayTableViewDelegate.swift in Sources */,
 				2855D25F1F1D663600D8B91D /* HousesTableViewController.swift in Sources */,
 				28B784711F0ECD8100255F77 /* Person.swift in Sources */,
 				28B784661F0EC23700255F77 /* House.swift in Sources */,
@@ -305,6 +344,7 @@
 				280205161F155DA90046FEC7 /* UIKitExtensions.swift in Sources */,
 				2802051A1F15621A0046FEC7 /* Repository.swift in Sources */,
 				2855D25B1F1D4A3600D8B91D /* WikiViewController.swift in Sources */,
+				28D4EB471F1EAB740089F52E /* DataSources.swift in Sources */,
 				284430B71F1E28C600F61E40 /* PersonsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

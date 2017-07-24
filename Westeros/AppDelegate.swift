@@ -22,8 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let houses = Repository.local.houses
         
-        //Creamos el combinador
-        let tableVC = HousesTableViewController(model: houses).wrappedInNavigation()
+        //1º Creamos el encargado de responder a las preguntas de la TableView
+        let dataSource = DataSources.houseDataSource(model: houses)
+        
+        //2º Creamos un combinador usando nuestra clase personalizada, recibe el datasource previo como parámetro y empaquetamos
+        let tableVC = ArrayTableViewController(dataSource: dataSource, style: .plain, title: "Houses").wrappedInNavigation()
         
         window?.rootViewController = tableVC
         
