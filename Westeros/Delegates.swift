@@ -8,12 +8,14 @@
 
 import UIKit
 
-final class Delegates {
+final class GreatHousesDelegate: ArrayTableViewDelegate<House>, UITableViewDelegate {
     
-    static func housesDelegate(model: [House]) -> ArrayTableViewDelegate<House> {
-        let arr = ArrayTableViewDelegate<House>(model: model)
-        return arr
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let house = source?.element(atIndexPath: indexPath),
+            let nav = viewController?.navigationController {
+            let vc = HouseViewController(model: house)
+            nav.pushViewController(vc, animated: true)
+        }
     }
-    
     
 }

@@ -29,6 +29,10 @@ final class ArrayDataSource<Element> : NSObject, UITableViewDataSource {
         super.init()
     }
     
+    //Usamos esta función para devolver el objeto concreto para una fila de un tableView
+    func element(atIndexPath indexPath: IndexPath)->Element{
+        return _model[indexPath.row]
+    }
     
     
     // Estas 3 funciones son las que debemos implementar para ser el dataSource de cualquier UITableView
