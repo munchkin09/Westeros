@@ -19,4 +19,13 @@ final class GreatHousesDelegate: ArrayTableViewDelegate<House>, UITableViewDeleg
         }
     }
     
+    
+}
+
+final class PersonsDelegate: ArrayTableViewDelegate<Person>, UITableViewDelegate {
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("\(indexPath)")
+    }
 }

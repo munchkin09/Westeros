@@ -11,6 +11,6 @@ import UIKit
 
 class ArrayTableViewDelegate<Element>: NSObject {
     var source : ArrayDataSource<Element>?
-    var viewController : UIViewController?
+    weak var viewController : UIViewController?
 }
 
