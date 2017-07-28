@@ -11,6 +11,7 @@ import UIKit
 final class GreatHousesDelegate: ArrayTableViewDelegate<House>, UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         if let house = source?.element(atIndexPath: indexPath),
             let nav = viewController?.navigationController {
             let vc = HouseViewController(model: house)
