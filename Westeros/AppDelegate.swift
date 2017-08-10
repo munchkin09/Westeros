@@ -21,17 +21,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         let houses = Repository.local.houses
+        let seasons = Repository.local.seasons
         
         //1º Creamos el encargado de responder a las preguntas de la TableView
-        let dataSource = DataSources.houseDataSource(model: houses)
+        let housesDataSource = DataSources.houseDataSource(model: houses)
+        let seasonsDataSource = DataSources.seasonsDataSource(model: seasons)
         
         //2º Creamos un combinador usando nuestra clase personalizada, recibe el datasource previo y un delegado personalizado como agurmentos y empaquetamos con wrappedInNavigation
-        let tableVC = ArrayTableViewController(dataSource: dataSource,
+        let housesTableVC = ArrayTableViewController(dataSource: housesDataSource,
                                                style: .plain, title: "Houses",
                                                delegate: GreatHousesDelegate()).wrappedInNavigation()
         
-        window?.rootViewController = tableVC
+        let seasonsTableVC = ArrayTableViewController(dataSource: seasonsDataSource, style: .plain, title: "Seasons", delegate: SeasonsDelegate()).wrappedInNavigation()
         
+        let tabVC = UITabBarController()
+        tabVC.viewControllers = [housesTableVC,seasonsTableVC]
+        
+        window?.rootViewController = tabVC
         return true
     }
 
