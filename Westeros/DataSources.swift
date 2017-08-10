@@ -52,4 +52,48 @@ final class DataSources {
         }
         return arrDS
     }
+    
+    static func seasonsDataSource(model: [Season]) -> ArrayDataSource<Season> {
+        
+        let arrDS = ArrayDataSource(model: model) { (season: Season, tableView: UITableView) -> UITableViewCell in
+            // Configure the cell...
+            let cellID = "SeasonCell"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            if cell == nil {
+                cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
+            }
+            
+            // Configure the cell...
+            
+            cell?.textLabel?.text = season.description
+            
+            return cell!
+            
+        }
+        return arrDS
+    }
+    
+    
+    static func episodesDataSource(model: [Episode]) -> ArrayDataSource<Episode> {
+        
+        let arrDS = ArrayDataSource(model: model) { (episode: Episode, tableView: UITableView) -> UITableViewCell in
+            // Configure the cell...
+            let cellID = "EpisodeCell"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            if cell == nil {
+                cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
+            }
+            
+            // Configure the cell...
+            
+            cell?.textLabel?.text = episode.description
+            
+            return cell!
+            
+        }
+        return arrDS
+    }
+    
+    
+    
 }

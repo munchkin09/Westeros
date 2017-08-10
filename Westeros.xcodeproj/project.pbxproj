@@ -10,6 +10,7 @@
 		280205161F155DA90046FEC7 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205151F155DA90046FEC7 /* UIKitExtensions.swift */; };
 		280205181F1560720046FEC7 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205171F1560720046FEC7 /* RepositoryTests.swift */; };
 		2802051A1F15621A0046FEC7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280205191F15621A0046FEC7 /* Repository.swift */; };
+		285485EE1F3B4EAB005E5CA9 /* EpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285485ED1F3B4EAB005E5CA9 /* EpisodeTest.swift */; };
 		2855D25B1F1D4A3600D8B91D /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855D2591F1D4A3600D8B91D /* WikiViewController.swift */; };
 		2855D25C1F1D4A3600D8B91D /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2855D25A1F1D4A3600D8B91D /* WikiViewController.xib */; };
 		2855D25F1F1D663600D8B91D /* HousesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855D25D1F1D663600D8B91D /* HousesTableViewController.swift */; };
@@ -32,6 +33,9 @@
 		28D4EB471F1EAB740089F52E /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB461F1EAB740089F52E /* DataSources.swift */; };
 		28D4EB491F1EB0240089F52E /* ArrayTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB481F1EB0240089F52E /* ArrayTableViewDelegate.swift */; };
 		28D4EB4B1F1EB11F0089F52E /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4EB4A1F1EB11F0089F52E /* Delegates.swift */; };
+		28ECF6B61F2B6C510007B605 /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF6B51F2B6C510007B605 /* SeasonTests.swift */; };
+		28ECF6B81F2B706A0007B605 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF6B71F2B706A0007B605 /* Season.swift */; };
+		28ECF6BA1F2B713B0007B605 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF6B91F2B713B0007B605 /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,7 @@
 		280205171F1560720046FEC7 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		280205191F15621A0046FEC7 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Westeros/Repository.swift; sourceTree = "<group>"; };
 		2802051B1F1572190046FEC7 /* FuncionesDeAltoNivel.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FuncionesDeAltoNivel.playground; sourceTree = "<group>"; };
+		285485ED1F3B4EAB005E5CA9 /* EpisodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTest.swift; sourceTree = "<group>"; };
 		2855D2591F1D4A3600D8B91D /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		2855D25A1F1D4A3600D8B91D /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		2855D25D1F1D663600D8B91D /* HousesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesTableViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +81,9 @@
 		28D4EB461F1EAB740089F52E /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
 		28D4EB481F1EB0240089F52E /* ArrayTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewDelegate.swift; sourceTree = "<group>"; };
 		28D4EB4A1F1EB11F0089F52E /* Delegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		28ECF6B51F2B6C510007B605 /* SeasonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
+		28ECF6B71F2B706A0007B605 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		28ECF6B91F2B713B0007B605 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,8 @@
 				28B7846E1F0ECAAA00255F77 /* PersonTest.swift */,
 				280205171F1560720046FEC7 /* RepositoryTests.swift */,
 				28D4EB411F1E9EE40089F52E /* ArrayDataSourceTests.swift */,
+				28ECF6B51F2B6C510007B605 /* SeasonTests.swift */,
+				285485ED1F3B4EAB005E5CA9 /* EpisodeTest.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -171,6 +181,8 @@
 				28B784651F0EC23700255F77 /* House.swift */,
 				28B784701F0ECD8100255F77 /* Person.swift */,
 				280205191F15621A0046FEC7 /* Repository.swift */,
+				28ECF6B71F2B706A0007B605 /* Season.swift */,
+				28ECF6B91F2B713B0007B605 /* Episode.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -337,6 +349,8 @@
 				280205161F155DA90046FEC7 /* UIKitExtensions.swift in Sources */,
 				2802051A1F15621A0046FEC7 /* Repository.swift in Sources */,
 				2855D25B1F1D4A3600D8B91D /* WikiViewController.swift in Sources */,
+				28ECF6B81F2B706A0007B605 /* Season.swift in Sources */,
+				28ECF6BA1F2B713B0007B605 /* Episode.swift in Sources */,
 				28D4EB471F1EAB740089F52E /* DataSources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28ECF6B61F2B6C510007B605 /* SeasonTests.swift in Sources */,
+				285485EE1F3B4EAB005E5CA9 /* EpisodeTest.swift in Sources */,
 				28B784641F0EC0F100255F77 /* HouseTests.swift in Sources */,
 				28B7846F1F0ECAAA00255F77 /* PersonTest.swift in Sources */,
 				28D4EB421F1E9EE40089F52E /* ArrayDataSourceTests.swift in Sources */,

@@ -29,3 +29,11 @@ final class PersonsDelegate: ArrayTableViewDelegate<Person>, UITableViewDelegate
         print("\(indexPath)")
     }
 }
+
+final class SeasonsDelegate: ArrayTableViewDelegate<Season>, UITableViewDelegate {
+   
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("\(indexPath)")
+    }
+}
